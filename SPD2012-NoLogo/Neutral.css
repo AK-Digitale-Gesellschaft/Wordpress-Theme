@@ -1,0 +1,21 @@
+#logo, #creator {
+  display:none;
+}
+
+body {
+    padding-top: 20px;
+}
+
+#welcome .textwidget {
+    margin: 0px 15px 20px;
+}
+#welcome h2.widgettitle {
+    margin: 0px 25px 20px;
+}
+
+#introduction, footer {
+    background: #00B4CC;
+}
+footer {
+    border:0;
+}

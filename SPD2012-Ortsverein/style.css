@@ -1,0 +1,16 @@
+/******************************************************************
+Theme Name: SPD2012-Ortsverein
+Theme URI: http://akdigitalegesellschaft.de
+Description: SPD Layout 2012 samt Features für Ortsvereine: Verwaltung von Vorstand, Fraktion usw.
+Author: Steffen Voß
+Author URI: http://kaffeeringe.de
+Version: 0.1
+Template: SPD2012
+
+License: GPL
+******************************************************************/
+
+h3.vorstand, h3.fraktion {
+  border-bottom:1px solid #E2001A;
+  margin-top:40px;
+}

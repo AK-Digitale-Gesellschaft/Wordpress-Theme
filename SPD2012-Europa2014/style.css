@@ -1,0 +1,40 @@
+/******************************************************************
+Theme Name: SPD2012-Europa2014
+Theme URI: http://akdigitalegesellschaft.de
+Description: SPD Layout zur Europawahl 2014. Achtung: Nach der Wahl wird dieses Layout wieder abgeschaltet.
+Author: Steffen Voß
+Author URI: http://kaffeeringe.de
+Version: 0.1
+Template: SPD2012
+
+License: GPL
+******************************************************************/
+
+#welcome .textwidget {
+    margin: 0px 15px 20px;
+}
+#welcome h2.widgettitle {
+    margin: 0px 25px 20px;
+}
+
+#introduction, footer {
+    background: #0053b4;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA1M2I0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzgxYjFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(-45deg,  #0053b4 0%, #81b1e5 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0053b4), color-stop(100%,#81b1e5));
+    background: -webkit-linear-gradient(-45deg,  #0053b4 0%,#81b1e5 100%);
+    background: -o-linear-gradient(-45deg,  #0053b4 0%,#81b1e5 100%);
+    background: -ms-linear-gradient(-45deg,  #0053b4 0%,#81b1e5 100%);
+    background: linear-gradient(135deg,  #0053b4 0%,#81b1e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0053b4', endColorstr='#81b1e5',GradientType=1 );
+}
+footer {
+    border:0;
+}
+#leftBlocks h2, #leftBlocks h3 {
+    border-bottom: 1px solid #e2001a;
+}
+#introduction h1, #slogan {
+    text-transform: none;
+    font-style: normal;
+}
