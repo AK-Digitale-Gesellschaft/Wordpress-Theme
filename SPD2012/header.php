@@ -38,7 +38,7 @@
 <style>
 <?php  
   $url = parse_url(get_header_image());
-  $url = get_site_url().$url['path'];
+  $url = $url['path'];
 ?>
 #person {
 	background: url('<?php echo($url); ?>') no-repeat scroll 0 0 transparent;
@@ -48,7 +48,7 @@
 <?php if ( !has_post_thumbnail() ) { ?><meta property="og:image" content="<?php echo($url); ?>"/><?php } ?>
   </head>
 <body>
-		<?php $options = get_option( 'SPD2012_options' ); ?>
+    <?php $options = get_option( 'SPD2012_options' ); ?>
     <div class="container" id="main">
     <div class="row">	
 
