@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+	<head>
     <meta charset="UTF-8">
     <title>SPD 2015</title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
@@ -9,10 +9,14 @@
   </head>
 
   <body>
-    <div class="container" style="background-color:lightgrey;">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-8">
-          <h1>AK Digitale Gesellschaft</h1>
+    <div class="container">
+      <div class="row visible-lg-block" id="lg-header">
+				<div id="logo">
+					<a href="#" title="Zurück zur Startseite"><img src="img/SPD-Logo.jpg" width="100" height="100" alt="Logo der SPD" /></a>
+				</div>
+        <div id="title" class="col-lg-offset-7 col-lg-5">
+          <h1>Arbeitskreis Digitale Gesellschaft</h1>
+					<p id="slogan">Sozial. Gerecht. Vor Ort.</p>
         </div>
       </div>
     </div>

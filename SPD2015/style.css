@@ -1,3 +1,46 @@
-.container{
-  width: 940px;
+@import url('fonts/stylesheet.css'); 
+
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+   }
+}
+
+body {
+		background: #F0F0F0 none repeat scroll 0% 0%;
+}
+
+#logo{
+	margin: -58px auto 0;
+	text-align: center;
+}
+
+#lg-header {
+	margin-top:60px;
+	background-image:url('img/default.jpg');
+	background-repeat:no-repeat;
+	height: 315px;
+}
+
+#lg-header #title {
+	background-color:#e2001a;
+	margin-top:-42px;	
+	height: 315px;
+	font-family:SPD-Bold, Arial, sans-serif;
+	text-transform:uppercase;
+	color:white;
+}
+
+#lg-header #title h1 {
+	font-weight:bold;
+}
+
+#lg-header #title h1, #lg-header #slogan {
+	font-size: 26px;
+	line-height: 1em;
+}
+
+#lg-header #slogan {
+	font-family:SPD-Regular, Arial, sans-serif;
+	font-style:italic;
 }
