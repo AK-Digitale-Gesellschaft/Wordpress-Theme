@@ -104,6 +104,15 @@ function remove_more_jump_link($link)
   
 }
 
+function add_home_to_nav( $items, $args )
+{
+		$home = '<li><a id="homelink" href="'.home_url().'"><img src="'.get_template_directory_uri().'/img/home.png" alt="Logo der SPD" /></a></li>';
+		$home .= $items;
+    return $home;
+}
+
+add_filter( 'wp_nav_menu_items', 'add_home_to_nav', 10, 2 );
+
 add_filter('the_content_more_link', 'remove_more_jump_link');
 add_action('after_setup_theme', 'SPD2015_theme_setup');
 
