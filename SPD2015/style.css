@@ -17,8 +17,6 @@ body {
 
 #lg-header {
 	margin-top: 60px;
-	background-image: url('img/default.jpg');
-	background-repeat: no-repeat;
 	height: 315px;
 }
 
@@ -83,10 +81,22 @@ body {
 
 #lg-main-content {
 	background: white;
+	padding-top:15px;
 }
 
-#right-sidebar {
-		border:1px solid #e2001a;
+#lg-main-content #right-sidebar .screen-reader-text {
+    display: none;
+}
+
+#lg-main-content #right-sidebar .widgettitle{
+	text-transform: uppercase;	
+	font-family: SPD-Bold, Arial, sans-serif;
+	margin: 22px 0px 3px;
+	font-size: 18px;
+	color: #E3000F;
+	border-bottom: 5px solid #00B4CC;
+	line-height: 1em;
+	padding-bottom: 5px;
 }
 
 

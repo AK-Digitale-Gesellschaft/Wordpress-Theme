@@ -28,6 +28,16 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/lib/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		<?php  
+			$url = parse_url(get_header_image());
+			$url = $url['path'];
+		?>
+		#lg-header {
+			background: url('<?php echo($url); ?>') no-repeat scroll 0 0 transparent;
+		}
+		</style>
+		<?php wp_head(); ?>
   </head>
 
   <body>

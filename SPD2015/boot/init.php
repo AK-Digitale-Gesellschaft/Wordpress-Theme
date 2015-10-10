@@ -7,11 +7,11 @@ function SPD2015_theme_setup()
   set_post_thumbnail_size(323, 200, true);
   add_image_size('homepage-thumb', 230, 142, true); //(cropped)
   add_image_size('square', 150, 150, true); //(cropped)
-  add_image_size('article', 555, 346, true); //(cropped)
+  add_image_size('article', 518, 323, true); //(cropped)
   // Add support for custom headers.
   $defaults = array(
     'default-image' => get_template_directory_uri() . '/img/default.jpg',
-    'width' => 587,
+    'width' => 564,
     'height' => 315
   );
   add_theme_support('custom-header', $defaults);
