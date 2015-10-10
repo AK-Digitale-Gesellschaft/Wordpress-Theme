@@ -7,7 +7,7 @@
 }
 
 body {
-		background: #F0F0F0 none repeat scroll 0% 0%;
+		background: #CCC;
 }
 
 #logo{
@@ -60,19 +60,40 @@ body {
 
 
 #lg-navbar .navbar-brand {
-    padding: 5px;
+  padding: 5px;
 }
 
 #lg-navbar .container-fluid, #lg-navbar .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #lg-navbar .navbar-nav > li > a {
-    padding: 10px 10px;
+  padding: 10px 10px;
 }
 
 #lg-navbar .navbar-nav > li > a#homelink {
-    padding-top: 6px;
-    padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+
+#lg-main-content {
+	background: white;
+}
+
+#right-sidebar {
+		border:1px solid #e2001a;
+}
+
+
+#lg-footer {
+	margin-top:10px;
+	padding:10px 0 50px;
+	background: #e2001a;
+	border-bottom:10px solid #990066;
+  color:white;		
+}
+#lg-footer a {
+  color:white;		
 }
