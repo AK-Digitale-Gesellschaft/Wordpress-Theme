@@ -76,7 +76,10 @@ body {
   padding-top: 6px;
   padding-bottom: 5px;
 }
-
+#lg-navbar .dropdown-menu {
+	border: 0;
+	border-radius: 0;
+ }
 
 #lg-main-content {
 	background: white;
