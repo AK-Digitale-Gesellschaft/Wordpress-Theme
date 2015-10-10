@@ -1,13 +1,17 @@
 @import url('fonts/stylesheet.css'); 
 
 @media (min-width: 1200px) {
-  .container {
-    width: 940px;
-   }
+		.container {
+		width: 940px;
+  }
 }
 
 body {
-		background: #CCC;
+	background: #CCC;
+}
+
+a {
+	color: #e2001a;
 }
 
 #logo{
@@ -74,6 +78,7 @@ body {
   padding-top: 6px;
   padding-bottom: 5px;
 }
+
 #lg-navbar .dropdown-menu {
 	border: 0;
 	border-radius: 0;
@@ -82,6 +87,26 @@ body {
 #lg-main-content {
 	background: white;
 	padding-top:15px;
+}
+
+#lg-main-content .homeImg {
+  margin:10px 15px 0 0;
+	float:left;
+}
+
+#lg-main-content h2 {
+	display:block;	
+	font-size:20px;
+	font-family: SPD-Bold, Arial, sans-serif;
+}
+
+#lg-main-content h2 a {
+	color:black;
+}
+
+#lg-main-content h2 small {
+	font-size:12px;
+	text-transform: uppercase;	
 }
 
 #lg-main-content #right-sidebar .screen-reader-text {
@@ -98,7 +123,6 @@ body {
 	line-height: 1em;
 	padding-bottom: 5px;
 }
-
 
 #lg-footer {
 	margin-top:10px;

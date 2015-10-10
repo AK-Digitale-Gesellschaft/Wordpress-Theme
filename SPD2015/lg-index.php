@@ -60,7 +60,16 @@
 			</nav>
 
 			<div class="row" id="lg-main-content">
-				<div class="col-lg-7" id="content">.col-md-7</div>
+				<div class="col-lg-7" id="content">
+					<?php include_once('loop.php') ?>
+<?php if (  $wp_query->max_num_pages > 1 ) : ?>
+					<div id="nav-below" class="navigation">
+						<div class="nav-previous"><?php previous_posts_link( '<< Neuere Beiträge'  ); ?></div>
+		      	<div class="nav-next"><?php next_posts_link( 'Ältere Beiträge >>'  ); ?></div>
+					</div>
+				<?php endif; ?>
+				</div>
+
 				<aside class="col-lg-5" id="right-sidebar">
 					<?php dynamic_sidebar('right'); ?>
 				</aside>
@@ -86,6 +95,8 @@
 		<div class="container hidden-lg">
 			TEST
 		</div>
+		
+		<?php wp_footer(); ?>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/lib/bootstrap/dist/js/bootstrap.min.js"></script>

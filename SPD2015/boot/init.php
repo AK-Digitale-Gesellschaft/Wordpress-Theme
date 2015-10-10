@@ -92,7 +92,7 @@ function SPD2015_thumbnail_caption()
 
 function remove_more_jump_link($link)
 {
-  
+  $end=0;
   $offset = strpos($link, '#more-');
   if ($offset) {
     $end = strpos($link, '"', $offset);
