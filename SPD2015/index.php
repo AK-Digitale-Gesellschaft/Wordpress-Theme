@@ -10,12 +10,12 @@ $scriptVersion = $detect->getScriptVersion();
 
 switch ($deviceType) {
     case 'computer':
-        include('lg-index.php');
+        include(get_template_directory().'/inc/lg/index.php');
         break;
     case 'tablet':
-        include('md-index.php');
+        include(get_template_directory().'/inc/md/index.php');
         break;
     case 'phone':
-        include('xs-index.php');
+        include(get_template_directory().'/inc/xs/index.php');
         break;
 }
