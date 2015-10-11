@@ -4,10 +4,10 @@ function SPD2015_theme_setup()
 {
   add_theme_support('automatic-feed-links');
   add_theme_support('post-thumbnails');
-  set_post_thumbnail_size(323, 200, true);
-  add_image_size('homepage-thumb', 230, 142, true); //(cropped)
-  add_image_size('square', 150, 150, true); //(cropped)
-  add_image_size('article', 518, 323, true); //(cropped)
+  set_post_thumbnail_size(323, 200, array( 'center', 'center' ));
+  add_image_size('homepage-thumb', 230, 142, array( 'center', 'center' )); //(cropped)
+  add_image_size('square', 150, 150, array( 'center', 'center' )); //(cropped)
+  add_image_size('article', 518, 323, array( 'center', 'center' )); //(cropped)
   // Add support for custom headers.
   $defaults = array(
     'default-image' => get_template_directory_uri() . '/img/default.jpg',
@@ -103,15 +103,6 @@ function remove_more_jump_link($link)
   return $link;
   
 }
-
-function add_home_to_nav( $items, $args )
-{
-		$home = '<li><a id="homelink" href="'.home_url().'"><img src="'.get_template_directory_uri().'/img/home.png" alt="Logo der SPD" /></a></li>';
-		$home .= $items;
-    return $home;
-}
-
-add_filter( 'wp_nav_menu_items', 'add_home_to_nav', 10, 2 );
 
 add_filter('the_content_more_link', 'remove_more_jump_link');
 add_action('after_setup_theme', 'SPD2015_theme_setup');
